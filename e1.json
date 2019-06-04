@@ -18,7 +18,7 @@
     },
     "iterator": {
         "type": "basic",
-        "batch_size": 32
+        "batch_size": 64
     },
     "model": {
         "type": "crf_tagger",
@@ -85,7 +85,7 @@
             "type": "adam",
             "lr": 0.001
         },
-        "patience": 25,
+        "patience": 1,
         "validation_metric": "+f1-measure-overall"
     },
     "evaluate_on_test": true
